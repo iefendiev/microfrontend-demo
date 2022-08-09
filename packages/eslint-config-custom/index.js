@@ -1,7 +1,15 @@
 module.exports = {
-  extends: ["next", "prettier"],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  extends: ['plugin:react/recommended', 'prettier'],
   rules: {
-    "@next/next/no-html-link-for-pages": "off",
-    "react/jsx-key": "off",
+    semi: 0,
+    'no-param-reassign': 0,
+    'global-require': 'off',
   },
 };
