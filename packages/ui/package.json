@@ -5,12 +5,16 @@
   "module": "./dist/index.mjs",
   "license": "MIT",
   "scripts": {
-    "build": "tsup index.jsx --format esm,cjs  --external react",
+    "build": "tsup components/index.jsx --format esm,cjs --external react",
     "clean": "rm -rf dist",
-    "dev": "tsup index.jsx --format esm,cjs --watch  --external react",
+    "dev": "tsup components/index.jsx --format esm,cjs --watch --external react",
     "lint": "eslint *.js*"
   },
   "devDependencies": {
+    "tailwindcss": "*",
+    "autoprefixer": "*",
+    "postcss": "*",
+    "postcss-preset-env": "*",
     "eslint": "^8.21.0",
     "eslint-config-custom": "*",
     "react": "^18.2.0",

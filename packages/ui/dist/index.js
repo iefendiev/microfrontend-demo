@@ -22,18 +22,18 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// index.jsx
-var ui_exports = {};
-__export(ui_exports, {
+// components/index.jsx
+var components_exports = {};
+__export(components_exports, {
   Button: () => Button
 });
-module.exports = __toCommonJS(ui_exports);
+module.exports = __toCommonJS(components_exports);
 
-// Button.jsx
+// components/Button.jsx
 var React = __toESM(require("react"));
 var Button = ({ children }) => /* @__PURE__ */ React.createElement("button", {
-  style: { padding: "8px" }
-}, /* @__PURE__ */ React.createElement("span", null, children), /* @__PURE__ */ React.createElement("span", null, "Shared UI Button component"));
+  className: "px-2 py-1 bg-slate-200 rounded-md shadow-md hover:shadow-lg"
+}, /* @__PURE__ */ React.createElement("span", null, children));
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Button

@@ -12,11 +12,6 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{js,jsx,md}\""
   },
-  "devDependencies": {
-    "eslint-config-custom": "*",
-    "prettier": "latest",
-    "turbo": "latest"
-  },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
@@ -37,6 +32,16 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3",
     "webpack-server": "^0.1.2"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "latest",
+    "turbo": "latest",
+    "tailwindcss": "^3.1.8",
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.7.2"
   },
   "packageManager": "yarn@1.22.18"
 }
