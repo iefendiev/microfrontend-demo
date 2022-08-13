@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "webpack server",
-    "build": "react-scripts build",
+    "build": "webpack build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
