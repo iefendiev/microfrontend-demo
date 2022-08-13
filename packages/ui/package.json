@@ -1,15 +1,20 @@
 {
   "name": "ui",
   "version": "0.0.0",
-  "main": "./index.jsx",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "license": "MIT",
   "scripts": {
+    "build": "tsup index.jsx --format esm,cjs  --external react",
+    "clean": "rm -rf dist",
+    "dev": "tsup index.jsx --format esm,cjs --watch  --external react",
     "lint": "eslint *.js*"
   },
   "devDependencies": {
     "eslint": "^8.21.0",
     "eslint-config-custom": "*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tsup": "^6.2.2"
   }
 }

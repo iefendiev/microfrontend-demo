@@ -1,5 +1,8 @@
 import * as React from 'react';
 
-export const Button = () => {
-  return <button style={{ padding: '8px', color: 'red' }}>Boop</button>;
-};
+export const Button = ({ children }) => (
+  <button style={{ padding: '8px' }}>
+    <span>{children}</span>
+    <span>Shared UI Button component</span>
+  </button>
+);

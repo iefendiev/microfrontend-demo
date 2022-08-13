@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     semi: 0,
     'no-param-reassign': 0,
-    'global-require': 'off',
+    'global-require': 0,
+    'react/prop-types': 0,
   },
 };
